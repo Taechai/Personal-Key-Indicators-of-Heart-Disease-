@@ -1,5 +1,8 @@
-<img src="./img/Download.svg" width="300" >
-<!--<img src=".github/Detectron2-Logo-Horz.svg" width="300" >-->
+<!--<img src="./img/Download.svg" width="300" >-->
+<div align="left">
+  <img src="./img/ensam.jpg"/>
+</div>
+<br>
 
 This folder is the work on our machine learning project, it includes several ML models, essentialy: LogisticRegression, MLPClassifier, SGDClassifier, StackingClissifier...
 Using [Personal Key Indicators of Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset), our final model should be able to disguish between a sick patient and a healthy one.
