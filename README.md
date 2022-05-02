@@ -1,24 +1,24 @@
 <!--<img src="./img/Download.svg" width="300" >-->
 <div align="left">
-  <img src="./img/ensam.jpg"/>
+  <img src="./img/download.jpg"/ height="100" width="400">
 </div>
 <br>
 
-This folder is the work on our machine learning project, it includes several ML models, essentialy: LogisticRegression, MLPClassifier, SGDClassifier, StackingClissifier...
+   This folder is the work on our machine learning project, it includes several ML models, essentialy: LogisticRegression, MLPClassifier, SGDClassifier, StackingClissifier...
 Using [Personal Key Indicators of Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset), our final model should be able to disguish between a sick patient and a healthy one.
 
 <div align="center">
-  <img src="./img/heart.jpg"/>
+  <img src="./img/heart.jpg"/ height="400">
 </div>
 <br>
 
 # Dataset :
 ## Context of the dataset :
-According to the CDC, heart disease is one of the leading causes of death for people of most races in the US (African Americans, American Indians and Alaska Natives, and white people). About half of all Americans (47%) have at least 1 of 3 key risk factors for heart disease: high blood pressure, high cholesterol, and smoking. Other key indicator include diabetic status, obesity (high BMI), not getting enough physical activity or drinking too much alcohol. Detecting and preventing the factors that have the greatest impact on heart disease is very important in healthcare. Computational developments, in turn, allow the application of machine learning methods to detect "patterns" from the data that can predict a patient's condition.
+   According to the CDC, heart disease is one of the leading causes of death for people of most races in the US (African Americans, American Indians and Alaska Natives, and white people). About half of all Americans (47%) have at least 1 of 3 key risk factors for heart disease: high blood pressure, high cholesterol, and smoking. Other key indicator include diabetic status, obesity (high BMI), not getting enough physical activity or drinking too much alcohol. Detecting and preventing the factors that have the greatest impact on heart disease is very important in healthcare. Computational developments, in turn, allow the application of machine learning methods to detect "patterns" from the data that can predict a patient's condition.
 
 ## Dataset visualization :
 
-The original dataset was of nearly 300 variables but the one used in this project only contains 20 ones. The variable "HeartDisease" is the target which is a binary ("Yes" : The patient has a heart disease; "No" : The patient do not have a heart disease), 
+   The original dataset was of nearly 300 variables but the one used in this project only contains 18 ones. The variable "HeartDisease" is the target which is a binary ("Yes" : The patient has a heart disease; "No" : The patient do not have a heart disease), 
 however the classes are not balanced
 
 <div align="center">
@@ -50,7 +50,7 @@ however the classes are not balanced
 
 
 ## Dataset pre-processing :
-We have around 319795 entries with 18 columns. No null values, and we have 14 numeric features, and 4 categorial features. We can convert the string attributes that has only limited possibilities to integer values, such as : 
+   We have around 319795 entries with 18 columns. No null values, and we have 14 numeric features, and 4 categorial features. We can convert the string attributes that has only limited possibilities to integer values, such as : 
 * Race 
 * Diabetic 
 * Sex
@@ -60,7 +60,7 @@ We have around 319795 entries with 18 columns. No null values, and we have 14 nu
 The dataset is then splitted into Train/test.
 
 # Modelling :
-The different models are trained on the initial set of features, therefore we will be evaluating the estimator based on the testing accuracy rather than the training accuracy.
+   The different models are trained on the initial set of features, therefore we will be evaluating the estimator based on the testing accuracy rather than the training accuracy.
 For each model we used sklearn GridSearchCv to get the optimum parameters for better results.
 The accuracy for the estimators is as follow :
 |Classifier | Accuracy|
@@ -79,7 +79,7 @@ The accuracy for the estimators is as follow :
 
 Now that we trained and test on different classifiers with tuning technique (GridSearchCV), we can then proceed with the choosing the most adequate estimator for the given project.
 ## Voting Classifier :
-A voting classifier is a machine learning estimator that trains various base models or estimators and predicts on the basis of aggregating the findings of each base estimator. The aggregating criteria can be combined decision of voting for each estimator output.
+   A voting classifier is a machine learning estimator that trains various base models or estimators and predicts on the basis of aggregating the findings of each base estimator. The aggregating criteria can be combined decision of voting for each estimator output.
 The base estimators used are : SGD Classifier, Decision Tree and KNeighbors Classifier.
 To configure the parameters, GridSearchCV is a must here as well.
 |             | precision |   recall | f1-score  | support|
@@ -102,7 +102,7 @@ stacking classifier is to make predictions with those several models, and then u
 
 # Inference :
 
-Using [Streamlit](https://github.com/streamlit/streamlit), we built a web application to predict the person's heart health condition based on a well-trained machine learning algorithm. 
+   Using [Streamlit](https://github.com/streamlit/streamlit), we built a web application to predict the person's heart health condition based on a well-trained machine learning algorithm. 
 To pick the adequate model with whom we will apply the algorithm, it's more convenient to pick it based on the recall value which represent the probability of diagnosing a sick person as being healthy.
 
 <div align="center">
