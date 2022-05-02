@@ -1,4 +1,4 @@
-<img src="./img/Download.jpg" width="300" >
+<img src="./img/Download.svg" width="300" >
 <!--<img src=".github/Detectron2-Logo-Horz.svg" width="300" >-->
 
 This folder is the work on our machine learning project, it includes several ML models, essentialy: LogisticRegression, MLPClassifier, SGDClassifier, StackingClissifier...
