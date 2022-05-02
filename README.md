@@ -77,7 +77,7 @@ The accuracy for the estimators is as follow :
 |MLP Classifier|0.92|
 |AdaBoost|0.92|
 
-Now that we trained and test on different classifiers with tuning technique (GridSearchCV), we can then proceed with the choosing the most adequate estimator for the given project.
+Now that we trained and tested on different classifiers with tuning technique (GridSearchCV), we can then proceed with the choosing the most adequate estimator for the given project.
 ## Voting Classifier :
    A voting classifier is a machine learning estimator that trains various base models or estimators and predicts on the basis of aggregating the findings of each base estimator. The aggregating criteria can be combined decision of voting for each estimator output.
 The base estimators used are : SGD Classifier, Decision Tree and KNeighbors Classifier.
