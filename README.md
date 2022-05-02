@@ -1,4 +1,4 @@
-<img src="./img/Download.png" width="300" >
+<img src="./img/Download.jpg" width="300" >
 <!--<img src=".github/Detectron2-Logo-Horz.svg" width="300" >-->
 
 This folder is the work on our machine learning project, it includes several ML models, essentialy: LogisticRegression, MLPClassifier, SGDClassifier, StackingClissifier...
@@ -19,7 +19,7 @@ The original dataset was of nearly 300 variables but the one used in this projec
 however the classes are not balanced
 
 <div align="center">
-  <img src="./img/vizML.jpg"/>
+  <img src="./img/data.jpg"/>
 </div>
 <br>
 
@@ -44,10 +44,7 @@ however the classes are not balanced
 * KidneyDisease : Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
 * SkinCancer : (Ever told) (you had) skin cancer?
 
-<div align="center">
-  <img src="./img/totalViz.png"/>
-</div>
-<br>
+
 
 ## Dataset pre-processing :
 We have around 319795 entries with 18 columns. No null values, and we have 14 numeric features, and 4 categorial features. We can convert the string attributes that has only limited possibilities to integer values, such as : 
